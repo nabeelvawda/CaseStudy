@@ -1,0 +1,2 @@
+era,n_test,up_label_rate,baseline_majority_acc,baseline_follow_bot_acc,model_acc,model_roc_auc
+pre-2026-04-03,2434,0.478,0.522,0.5,0.493,0.493
