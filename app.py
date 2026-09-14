@@ -8,21 +8,17 @@ st.set_page_config(page_title="BTC Signal Predictor", layout="wide")
 # ── Load artifacts (cached so they only load once per session) ──────────
 @st.cache_resource
 def load_model():
-    model = joblib.load("models/ma_ema_model.joblib")
-    scaler = joblib.load("models/ma_ema_scaler.joblib")
+    model = joblib.load("ma_ema_model.joblib")
+    scaler = joblib.load("ma_ema_scaler.joblib")
     return model, scaler
 
 @st.cache_data
 def load_history():
-    # This should be a small CSV export of gold_ma_ema_features_labels
-    # (or a sample of it) that you commit alongside the app, e.g.:
-    #   df.to_csv("data/ma_ema_history.csv", index=False)
-    return pd.read_csv("data/ma_ema_history.csv", parse_dates=["signaled_at"])
+    return pd.read_csv("ma_ema_history.csv", parse_dates=["signaled_at"])
 
 @st.cache_data
 def load_model_summary():
-    # The reports/model_summary.csv produced at the end of Part 2
-    return pd.read_csv("data/model_summary.csv")
+    return pd.read_csv("model_summary.csv")
 
 model, scaler = load_model()
 history = load_history()
