@@ -1,7 +1,8 @@
 # Crypto Trading Signal Pipeline
 
-**GitHub repo:** [Add link here]
-**Interactive interface (Streamlit):** https://casestudy-gpgyxslxnoe6vmcoflr5f8.streamlit.app/
+
+### **GitHub repo:** https://github.com/nabeelvawda/CaseStudy 
+### **Interactive interface (Streamlit):** https://casestudy-gpgyxslxnoe6vmcoflr5f8.streamlit.app/
 ---
 
 ## Executive Summary
